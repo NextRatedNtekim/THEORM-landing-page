@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  /* Paper: warm, sage-tinted off-white -- evokes an answer sheet, not a generic SaaS cream */
+  --color-paper: #f5f6ef;
+  --color-paper-deep: #eceee1;
+
+  /* Ink */
+  --color-ink: #1a2113;
+  --color-ink-soft: #4a5340;
+  --color-ink-faint: #7c836f;
+
+  /* Brand greens (Theorem) */
+  --color-primary: #5c7d26;
+  --color-primary-light: #accf4d;
+  --color-primary-dark: #3f5a19;
+
+  /* Accent: warm result-slip amber, used sparingly for pricing / achievement moments */
+  --color-accent: #c98a2b;
+
+  /* Surfaces */
+  --color-surface: #ffffff;
+  --color-line: #dfe0d0;
+  --color-line-strong: #c7c9b5;
+}
+
+@theme inline {
+  --color-paper: var(--color-paper);
+  --color-paper-deep: var(--color-paper-deep);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-ink-faint: var(--color-ink-faint);
+  --color-primary: var(--color-primary);
+  --color-primary-light: var(--color-primary-light);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-accent: var(--color-accent);
+  --color-surface: var(--color-surface);
+  --color-line: var(--color-line);
+  --color-line-strong: var(--color-line-strong);
+
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-jakarta);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Frosted glass surface used sparingly -- the hero device frame and the nav bar only */
+.glass {
+  background: color-mix(in srgb, var(--color-surface) 70%, transparent);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid color-mix(in srgb, white 60%, var(--color-line));
+}
+
+/* Faint ruled-paper texture for the hero backdrop, echoing an answer sheet */
+.ruled-bg {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--color-primary) 7%, transparent) 0px,
+    color-mix(in srgb, var(--color-primary) 7%, transparent) 1px,
+    transparent 1px,
+    transparent 40px
+  );
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}

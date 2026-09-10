@@ -1,0 +1,29 @@
+export const siteConfig = {
+  name: "Theorem",
+  tagline: "JUPEB past questions and CBT practice for Android",
+  description:
+    "Theorem is the offline-capable JUPEB study app: practice real past questions by subject and year, sit full CBT-style mock exams, and track your progress -- all on Android, all in one place.",
+  url: "https://theorem.app", // TODO: replace with the production domain before launch
+  ogImage: "/og-image.svg",
+  keywords: [
+    "JUPEB app",
+    "JUPEB past questions",
+    "JUPEB CBT practice",
+    "JUPEB study app",
+    "JUPEB exam prep Android",
+    "JUPEB mock exam",
+    "computer based test practice Nigeria",
+  ],
+  playStoreUrl: "#", // TODO: replace with the live Google Play listing on launch
+  launchDate: "2026-11-15",
+  price: {
+    amount: "\u20a64,000",
+    period: "9 months",
+    provider: "Paystack",
+  },
+  social: {
+    twitter: "https://x.com/theoremjupeb", // TODO: confirm handle
+  },
+} as const;
+
+export type SiteConfig = typeof siteConfig;
