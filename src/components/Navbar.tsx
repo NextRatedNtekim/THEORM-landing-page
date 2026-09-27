@@ -1,16 +1,27 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { siteConfig } from "@/lib/site-config";
+import { DownloadButton } from "./DownloadButton";
 
 const links = [
   { href: "#features", label: "Features" },
   { href: "#how-it-works", label: "How it works" },
+  { href: "#showcase", label: "Showcase" },
+  { href: "#testimonials", label: "Testimonials" },
   { href: "#pricing", label: "Pricing" },
   { href: "#faq", label: "FAQ" },
 ];
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 px-4 pt-4 sm:px-6">
+    <motion.header
+      initial={{ opacity: 0, y: -16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+      className="sticky top-0 z-50 px-4 pt-4 sm:px-6"
+    >
       <div className="glass mx-auto flex max-w-6xl items-center justify-between rounded-2xl px-4 py-3 sm:px-6">
         <Link
           href="#top"
@@ -31,13 +42,10 @@ export function Navbar() {
           ))}
         </nav>
 
-        <Link
-          href={siteConfig.playStoreUrl}
-          className="focus-ring rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-dark sm:px-5"
-        >
+        <DownloadButton className="focus-ring rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-dark active:scale-[0.98] sm:px-5">
           Get the app
-        </Link>
+        </DownloadButton>
       </div>
-    </header>
+    </motion.header>
   );
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import { ImagePlaceholder } from "./ImagePlaceholder";
+import { DownloadButton } from "./DownloadButton";
 
 export function Footer() {
   return (
@@ -11,12 +12,12 @@ export function Footer() {
             <span className="font-display text-lg font-medium text-ink">{siteConfig.name}</span>
             <p className="mt-3 text-sm leading-relaxed text-ink-soft">{siteConfig.description}</p>
 
-            <Link href={siteConfig.playStoreUrl} className="focus-ring mt-6 inline-block rounded-lg">
+            <DownloadButton className="focus-ring mt-6 inline-block rounded-lg">
               <ImagePlaceholder
                 label="Get it on Google Play badge (official Play Store asset)"
                 className="h-14 w-48 justify-center"
               />
-            </Link>
+            </DownloadButton>
           </div>
 
           <nav className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm sm:flex sm:gap-16" aria-label="Footer">
@@ -24,6 +25,7 @@ export function Footer() {
               <span className="font-medium text-ink">Product</span>
               <Link href="#features" className="focus-ring rounded-md text-ink-soft hover:text-ink">Features</Link>
               <Link href="#how-it-works" className="focus-ring rounded-md text-ink-soft hover:text-ink">How it works</Link>
+              <Link href="#showcase" className="focus-ring rounded-md text-ink-soft hover:text-ink">Showcase</Link>
               <Link href="#pricing" className="focus-ring rounded-md text-ink-soft hover:text-ink">Pricing</Link>
             </div>
             <div className="flex flex-col gap-3">

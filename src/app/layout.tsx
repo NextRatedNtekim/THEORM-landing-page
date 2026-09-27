@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import { MotionConfig } from "framer-motion";
 import "./globals.css";
 import { siteConfig } from "@/lib/site-config";
 
@@ -116,7 +117,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
       </head>
       <body className="min-h-full flex flex-col bg-paper text-ink">
-        {children}
+        {/* reducedMotion="user" makes every Framer Motion animation on the
+            page respect the visitor's prefers-reduced-motion setting */}
+        <MotionConfig reducedMotion="user">{children}</MotionConfig>
       </body>
     </html>
   );

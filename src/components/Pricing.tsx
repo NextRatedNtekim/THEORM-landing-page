@@ -1,6 +1,9 @@
-import Link from "next/link";
+"use client";
+
+import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
+import { DownloadButton } from "./DownloadButton";
 
 const freeIncludes = [
   "A sample of past questions per subject",
@@ -25,7 +28,13 @@ export function Pricing() {
       </div>
 
       <div className="mt-14 grid gap-6 lg:grid-cols-2">
-        <div className="rounded-3xl border border-line bg-surface p-8">
+        <motion.div
+          initial={{ opacity: 0, x: -24 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
+          className="rounded-3xl border border-line bg-surface p-8"
+        >
           <h3 className="font-display text-xl font-medium text-ink">Free</h3>
           <p className="mt-1 text-sm text-ink-soft">Enough to see how Theorem works.</p>
           <p className="mt-6 font-display text-3xl font-medium text-ink">&#8358;0</p>
@@ -37,9 +46,16 @@ export function Pricing() {
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
 
-        <div className="relative rounded-3xl border border-primary/40 bg-surface p-8 shadow-[0_20px_50px_-25px_rgba(92,125,38,0.45)]">
+        <motion.div
+          initial={{ opacity: 0, x: 24 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as const, delay: 0.1 }}
+          whileHover={{ y: -4 }}
+          className="relative rounded-3xl border border-primary/40 bg-surface p-8 shadow-[0_20px_50px_-25px_rgba(92,125,38,0.45)]"
+        >
           <span className="absolute -top-3 left-8 rounded-full bg-accent px-3 py-1 text-xs font-semibold text-white">
             Full access
           </span>
@@ -59,16 +75,13 @@ export function Pricing() {
               </li>
             ))}
           </ul>
-          <Link
-            href={siteConfig.playStoreUrl}
-            className="focus-ring mt-8 inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
-          >
+          <DownloadButton className="focus-ring mt-8 inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-dark active:scale-[0.98]">
             Get Theorem for Android
-          </Link>
+          </DownloadButton>
           <p className="mt-3 text-center text-xs text-ink-faint">
             Secure checkout via {siteConfig.price.provider}
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

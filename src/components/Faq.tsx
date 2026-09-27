@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: "When does Theorem launch?",
-    answer: "Theorem is on track for release on the Google Play Store in November 2026.",
+    answer: `Theorem is on track for release on the Google Play Store on ${siteConfig.launchDateLabel}.`,
   },
   {
     question: "How does the premium subscription work?",

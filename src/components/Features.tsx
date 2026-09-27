@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import {
   MonitorCheck,
   Layers,
@@ -53,6 +56,16 @@ const features: Feature[] = [
   },
 ];
 
+const grid = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.08 } },
+};
+
+const cell = {
+  hidden: { opacity: 0, y: 16 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] as const } },
+};
+
 export function Features() {
   return (
     <section id="features" className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
@@ -66,15 +79,26 @@ export function Features() {
         </p>
       </div>
 
-      <div className="mt-14 grid gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
+      <motion.div
+        className="mt-14 grid gap-8 overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3 bg-white"
+        variants={grid}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-80px" }}
+      >
         {features.map(({ icon: Icon, title, description }) => (
-          <div key={title} className="flex flex-col gap-4 bg-surface p-8">
+          <motion.div
+            key={title}
+            variants={cell}
+            whileHover={{ backgroundColor: "var(--color-paper)" }}
+            className="flex flex-col gap-4 bg-surface p-8 b-5"
+          >
             <Icon className="h-6 w-6 text-primary" strokeWidth={1.75} aria-hidden="true" />
             <h3 className="font-display text-lg font-medium text-ink">{title}</h3>
             <p className="text-[0.95rem] leading-relaxed text-ink-soft">{description}</p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

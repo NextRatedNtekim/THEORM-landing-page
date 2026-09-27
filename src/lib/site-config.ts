@@ -15,7 +15,8 @@ export const siteConfig = {
     "computer based test practice Nigeria",
   ],
   playStoreUrl: "#", // TODO: replace with the live Google Play listing on launch
-  launchDate: "2026-11-15",
+  launchDate: "2026-11-05",
+  launchDateLabel: "5 November 2026",
   price: {
     amount: "\u20a64,000",
     period: "9 months",
