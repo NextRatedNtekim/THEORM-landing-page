@@ -16,12 +16,18 @@ export const siteConfig = {
   ],
   playStoreUrl: "#", // TODO: replace with the live Google Play listing on launch
   launchDate: "2026-11-05",
-  launchDateLabel: "5 November 2026",
+  launchDateLabel: "15 November 2026",
   price: {
     amount: "\u20a64,000",
     period: "9 months",
     provider: "Paystack",
   },
+  email: "hello@theorem.app", // TODO: confirm support email
+  team: [
+    // TODO: replace names/roles/links, and drop portraits into /public/team (e.g. "/team/founder-one.jpg")
+    { name: "Abasiponke Dennis", role: "Founder & CEO", photo: "", x: "https://x.com/theoremjupeb", linkedin: "https://linkedin.com" },
+    { name: "Samuel Ntekim", role: "Software Engineer", photo: "", x: "https://x.com/theoremjupeb", linkedin: "https://linkedin.com" },
+  ],
   social: {
     twitter: "https://x.com/theoremjupeb", // TODO: confirm handle
   },

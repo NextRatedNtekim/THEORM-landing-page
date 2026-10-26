@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
-import { MotionConfig } from "framer-motion";
+import { MotionConfig } from "motion/react";
 import "./globals.css";
 import { siteConfig } from "@/lib/site-config";
 
@@ -64,9 +64,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
       "max-video-preview": -1,
     },
-  },
-  icons: {
-    icon: "/favicon.svg",
   },
   // TODO: once you register the property in Google Search Console, either
   // paste the HTML-tag verification token below or keep verification via

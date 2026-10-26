@@ -1,9 +1,11 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { WifiOff, ListChecks, GraduationCap, Sparkles, TrendingUp } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
-import { ImagePlaceholder } from "./ImagePlaceholder";
+import Image from "next/image";
+import HeroCbt from "@/asserts/hero-cbt-practice.webp";
+import HeroAnalytics from "@/asserts/hero-analytics.webp";
 import { DownloadButton } from "./DownloadButton";
 
 const quickFacts = [
@@ -110,10 +112,9 @@ export function Hero() {
             }}
           >
             <div className="overflow-hidden rounded-[2rem] bg-surface">
-              <ImagePlaceholder
-                label="App screenshot: CBT practice screen (portrait, 9:19.5)"
-                className="aspect-[9/19.5] w-full rounded-none border-0"
-              />
+              <div className="relative aspect-[9/19.5] w-full">
+                <Image src={HeroCbt} alt="Theorem CBT practice screen showing a timed question with four options" fill priority sizes="(min-width: 1024px) 260px, 240px" className="object-cover" />
+              </div>
             </div>
           </motion.div>
 
@@ -130,10 +131,9 @@ export function Hero() {
             }}
           >
             <div className="overflow-hidden rounded-[1.85rem] bg-surface">
-              <ImagePlaceholder
-                label="App screenshot: analytics / progress tab (portrait, 9:19.5)"
-                className="aspect-[9/19.5] w-full rounded-none border-0"
-              />
+              <div className="relative aspect-[9/19.5] w-full">
+                <Image src={HeroAnalytics} alt="Theorem analytics overview showing overall accuracy and attempts" fill sizes="(min-width: 1024px) 220px, 200px" className="object-cover" />
+              </div>
             </div>
           </motion.div>
 

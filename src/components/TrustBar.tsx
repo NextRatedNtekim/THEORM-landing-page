@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { ShieldCheck, WifiOff, Timer, BookOpenCheck, type LucideIcon } from "lucide-react";
 
 type Point = {

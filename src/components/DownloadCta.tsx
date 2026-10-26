@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { CalendarClock } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { ImagePlaceholder } from "./ImagePlaceholder";

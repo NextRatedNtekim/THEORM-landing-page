@@ -89,3 +89,19 @@ body {
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
 }
+
+/* Showcase marquee: slide exactly one copy's width, then loop seamlessly */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 70s linear infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none !important;
+    overflow-x: auto;
+  }
+}

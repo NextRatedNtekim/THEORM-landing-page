@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { legalDocs } from "@/lib/legal";
 import { siteConfig } from "@/lib/site-config";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 import { DownloadButton } from "./DownloadButton";
@@ -31,7 +32,14 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               <span className="font-medium text-ink">Support</span>
               <Link href="#faq" className="focus-ring rounded-md text-ink-soft hover:text-ink">FAQ</Link>
-              <Link href="mailto:hello@theorem.app" className="focus-ring rounded-md text-ink-soft hover:text-ink">Contact</Link>
+              <Link href="#team" className="focus-ring rounded-md text-ink-soft hover:text-ink">Team</Link>
+              <Link href={`mailto:${siteConfig.email}`} className="focus-ring rounded-md text-ink-soft hover:text-ink">Contact</Link>
+            </div>
+            <div className="flex flex-col gap-3">
+              <span className="font-medium text-ink">Legal</span>
+              {legalDocs.filter((d) => !["cookie-policy", "support-contact-page-copy"].includes(d.slug)).map((d) => (
+                <Link key={d.slug} href={`/legal/${d.slug}`} className="focus-ring rounded-md text-ink-soft hover:text-ink">{d.title}</Link>
+              ))}
             </div>
           </nav>
         </div>

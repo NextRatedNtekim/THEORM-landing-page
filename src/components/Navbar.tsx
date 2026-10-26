@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { siteConfig } from "@/lib/site-config";
 import { DownloadButton } from "./DownloadButton";
 
@@ -11,6 +11,7 @@ const links = [
   { href: "#showcase", label: "Showcase" },
   { href: "#testimonials", label: "Testimonials" },
   { href: "#pricing", label: "Pricing" },
+  { href: "#team", label: "Team" },
   { href: "#faq", label: "FAQ" },
 ];
 
@@ -30,12 +31,12 @@ export function Navbar() {
           {siteConfig.name}
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-6 md:flex" aria-label="Primary">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="focus-ring rounded-md text-sm text-ink-soft transition-colors hover:text-ink"
+              className="focus-ring group relative rounded-md text-sm text-ink-soft transition-colors hover:text-ink after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
             >
               {link.label}
             </Link>

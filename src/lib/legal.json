@@ -1,0 +1,660 @@
+[
+ {
+  "slug": "privacy-policy",
+  "title": "Privacy Policy",
+  "meta": [
+   "Effective date: [DATE]",
+   "Last updated: [DATE]",
+   "Operator: [LEGAL OWNER / ORGANISATION NAME]"
+  ],
+  "sections": [
+   {
+    "h": "1. About this policy",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "This Privacy Policy explains how Theorem JUPEB / CBT App (“Theorem”, “we”, “us” or “our”) handles personal information when students use our mobile app, website, study materials, practice tools and examination features. It should be read together with our Terms of Service."
+     }
+    ]
+   },
+   {
+    "h": "2. Information we may process",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Depending on the features you use, Theorem may process:"
+     },
+     {
+      "t": "ul",
+      "x": [
+       "Account information, including your email address and the name/avatar you choose for your profile.",
+       "Study setup information, including your selected track, university and subject combination, and any request to change a confirmed combination.",
+       "Learning and assessment records, including practice/exam attempts, answers submitted, scores, exam history, time taken, accuracy and analytics derived from your activity.",
+       "Bookmarks and app preferences associated with your account.",
+       "Premium purchase information, including Paystack transaction references, payment status and the date premium access was granted. Payment-card details are handled through the payment provider’s checkout; do not send payment-card details to our support team.",
+       "Device and technical information, such as device model, operating-system information, app version, push-notification token, and information needed to maintain sessions, troubleshoot errors and deliver notifications.",
+       "Information you send to support, if you contact us."
+      ]
+     },
+     {
+      "t": "p",
+      "x": "The exact information processed may vary by app version and features used."
+     }
+    ]
+   },
+   {
+    "h": "3. How we use information",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "We use information as needed to create and secure accounts; authenticate users; save and retrieve subject combinations, bookmarks and exam history; deliver study notes, past questions and practice questions; grade assessments and calculate analytics; process premium purchases and confirm access; send push notifications when enabled; respond to support requests; prevent account data from appearing to another signed-in user; and operate, maintain and protect the service."
+     }
+    ]
+   },
+   {
+    "h": "4. Study content and premium access",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The app retrieves subjects, sections, topics, notes and questions from our content-management service. Some content is restricted to premium sections. Premium access is currently described in the app as a one-time payment of ₦4,000 for nine months. Payment confirmation is checked by our server, and access is granted after confirmation from the payment provider. Content files and images may be delivered through temporary signed links that expire after a limited period."
+     }
+    ]
+   },
+   {
+    "h": "5. Service providers and sharing",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The implementation notes identify Supabase for authentication and certain account-related data, a separate CMS/API for learning content and exam services, and Paystack for checkout/payment confirmation. Push notifications are delivered through the app’s notification infrastructure. These providers may process information to provide their services. We do not sell personal information as a business practice. We may disclose information where reasonably necessary to operate the service, protect users, comply with law, or respond to lawful requests. Confirm and list any additional providers actually used before publishing."
+     }
+    ]
+   },
+   {
+    "h": "6. Account security and access separation",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "We use account sessions and server-side access controls to associate data with the relevant student. The app is designed to clear cached account-specific content on sign-out and reset account-specific stores when a different user signs in. No online service can guarantee absolute security, so please protect your sign-in credentials and tell us promptly if you suspect unauthorised access."
+     }
+    ]
+   },
+   {
+    "h": "7. Push notifications",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "If you grant notification permission, the app can register this device to receive notifications sent by the service. You can control operating-system notification permission in your device settings. Signing out is designed to detach the device’s push registration from the account."
+     }
+    ]
+   },
+   {
+    "h": "8. Retention",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "We retain information for as long as reasonably necessary to provide the service, maintain relevant account and transaction records, resolve disputes, protect the service and meet applicable legal obligations. The precise retention periods, including for backups and payment records, must be confirmed by the operator and reflected here before publication. Deleting an account does not necessarily erase records that must be retained for legal, security or accounting reasons."
+     }
+    ]
+   },
+   {
+    "h": "9. Your choices and requests",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "You can sign out through the app. You may request account deletion through the app’s account-deletion feature, subject to successful connectivity and verification. You may also contact [PRIVACY EMAIL] to ask about your personal information or applicable privacy rights. We may need to verify your identity before acting on a request. The app’s account-deletion flow is designed to remove exam history and push tokens, delete the Supabase user, and cascade to related profile/bookmark records; confirm the live implementation and any retained records before publication."
+     }
+    ]
+   },
+   {
+    "h": "10. Children and age",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The supplied implementation notes do not specify a minimum user age or whether the service is directed at children. [OPERATOR: state the intended age group and the process used if a user below the permitted age provides personal information.] Do not publish this policy until this section is completed."
+     }
+    ]
+   },
+   {
+    "h": "11. International processing",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Our service providers may process information in locations outside Nigeria. Before publishing, confirm the locations of the providers and the safeguards relied on for any international transfers, and update this section accordingly."
+     }
+    ]
+   },
+   {
+    "h": "12. Changes to this policy",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "We may update this policy when the app, our providers or our data practices change. We will post the revised version at [PRIVACY POLICY URL] and update the “Last updated” date. Where required, we will provide additional notice or obtain consent."
+     }
+    ]
+   },
+   {
+    "h": "13. Contact",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Privacy questions and requests: [PRIVACY EMAIL] App support: [SUPPORT EMAIL] Support WhatsApp (if offered): [SUPPORT WHATSAPP] Operator/legal name: [LEGAL OWNER / ORGANISATION NAME] Business/contact address: [BUSINESS ADDRESS, IF APPLICABLE]"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "terms-of-service",
+  "title": "Terms of Service",
+  "meta": [
+   "Effective date: [DATE]",
+   "Operator: [LEGAL OWNER / ORGANISATION NAME]"
+  ],
+  "sections": [
+   {
+    "h": "1. Agreement",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "These Terms govern your use of Theorem JUPEB / CBT App, its website, study materials, practice questions, computer-based tests (CBTs), exam simulations, bookmarks, analytics and related services. By creating an account or using the service, you agree to these Terms. If you do not agree, do not use the service."
+     }
+    ]
+   },
+   {
+    "h": "2. Who may use the service",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "You must provide accurate account information and use the service in accordance with applicable law and any eligibility rules shown during registration. [OPERATOR: insert the minimum age and any parental/guardian consent requirements before publication.] You are responsible for maintaining the confidentiality of your credentials and activity under your account."
+     }
+    ]
+   },
+   {
+    "h": "3. Educational purpose; no guarantee",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The app is a study and exam-preparation tool. It provides notes, past questions, practice questions, exam simulations and performance analytics. We do not guarantee a particular JUPEB result, admission outcome, score, grade or university placement. Content and analytics are provided to support study and should not be treated as a guarantee of examination outcomes."
+     }
+    ]
+   },
+   {
+    "h": "4. Accounts and subject combination",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "You may be asked to select a study track, university and subject combination during setup. The app may treat a confirmed subject combination as locked. A request to change it may be limited in frequency and may require administrator approval. Do not submit false information or attempt to bypass these controls."
+     }
+    ]
+   },
+   {
+    "h": "5. Content and use restrictions",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Study notes, questions, explanations, model answers, diagrams and other materials are made available through the app. You may use them for your personal educational preparation. Unless we give written permission or applicable law permits it, you must not copy, redistribute, sell, publish, scrape, or commercially exploit the content; attempt to bypass premium restrictions; interfere with the service; probe or circumvent security; impersonate another user; or use the app for unlawful, deceptive or abusive activity."
+     }
+    ]
+   },
+   {
+    "h": "6. Free and premium content",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Some sections may be free and others may require premium access. Premium access is currently offered for a one-time payment of ₦4,000 for nine months, subject to the price and terms displayed at checkout. Premium access is granted after server-side payment confirmation. Do not treat a payment page, pending transaction or screenshot alone as proof that access has been granted. Contact support if a completed payment is not reflected in your account."
+     }
+    ]
+   },
+   {
+    "h": "7. Payments and refunds",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Payments are initiated through Paystack checkout. The price, duration and applicable terms shown at checkout apply to the purchase. The supplied product information does not define refund eligibility; the operator must publish the approved Refund & Cancellation Policy at [REFUND POLICY URL] before accepting real payments. Nothing in these Terms removes rights that cannot legally be excluded."
+     }
+    ]
+   },
+   {
+    "h": "8. Exams, scoring and analytics",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Practice CBTs and exam simulations may be graded by the server. Exam questions, timing, scoring, result review and analytics depend on the content and configuration available at the time. We may correct errors in content or scoring where reasonably necessary. Do not use the app to cheat in a live examination or misrepresent app results as official examination results."
+     }
+    ]
+   },
+   {
+    "h": "9. Availability and changes",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The service may require an internet connection for sign-in, content retrieval, exam submission, payment confirmation, analytics and notifications. Temporary interruptions, maintenance, network failures or provider outages may occur. We may update, modify or discontinue features where reasonably necessary. We will make reasonable efforts to avoid losing submitted answers during supported retry flows, but you should not assume that every unsent response is recoverable after a device or network failure."
+     }
+    ]
+   },
+   {
+    "h": "10. Third-party services",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Authentication, payment, content delivery and notification features rely on third-party services. Their services may be subject to separate terms and privacy practices. We are not responsible for third-party services to the extent permitted by law, but you may contact us about issues arising while using Theorem."
+     }
+    ]
+   },
+   {
+    "h": "11. Intellectual property",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Unless otherwise stated, the app’s software, branding, interface and original materials are owned by or licensed to [LEGAL OWNER / ORGANISATION NAME]. Content supplied by third parties may remain owned by those parties. These Terms do not transfer ownership to you. If you believe material infringes your rights, contact [COPYRIGHT / SUPPORT EMAIL] with sufficient details for us to review the complaint."
+     }
+    ]
+   },
+   {
+    "h": "12. Suspension and termination",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "We may restrict or suspend access where reasonably necessary to protect users, investigate suspected fraud or abuse, enforce these Terms, comply with law, or protect the service. You may stop using the service and request account deletion using the available in-app feature. Any outstanding obligations or lawful records may survive termination."
+     }
+    ]
+   },
+   {
+    "h": "13. Disclaimers and limitation",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "To the extent permitted by applicable law, the service is provided on an “as available” basis. We do not promise uninterrupted or error-free operation or that every study resource will be free of errors. Nothing in these Terms excludes liability or consumer rights that cannot legally be excluded under applicable law."
+     }
+    ]
+   },
+   {
+    "h": "14. Changes and contact",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "We may revise these Terms as the service changes. The updated version will be published at [TERMS URL] with a revised date. Contact [SUPPORT EMAIL] for service questions or [LEGAL EMAIL] for legal notices. Operator: [LEGAL OWNER / ORGANISATION NAME]."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "educational-disclaimer",
+  "title": "Educational Disclaimer",
+  "meta": [
+   "Effective date: [DATE]"
+  ],
+  "sections": [
+   {
+    "h": "Educational use only",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Theorem JUPEB / CBT App is intended to support learning and exam preparation through study notes, past questions, practice questions, exam simulations and performance analytics."
+     }
+    ]
+   },
+   {
+    "h": "No official affiliation unless expressly stated",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Unless we explicitly state otherwise in writing, Theorem should not be understood to be an official JUPEB examination body, university, admissions authority or government service. The app’s questions, model answers and explanations are study resources and are not a representation that the same questions will appear in an actual examination."
+     }
+    ]
+   },
+   {
+    "h": "No guaranteed results",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Using the app does not guarantee a particular score, JUPEB result, admission, scholarship or university placement. Results depend on many factors, including a student’s preparation and official examination and admissions decisions."
+     }
+    ]
+   },
+   {
+    "h": "Accuracy and updates",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "We aim to provide useful educational material, but errors, omissions, outdated information or differences in interpretation may occur. Students should check important requirements and official examination or admissions information with the relevant authority."
+     }
+    ]
+   },
+   {
+    "h": "Analytics",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Scores, accuracy, time measurements and subject-performance summaries are learning aids based on activity recorded by the app. They are not official grades or a definitive measure of a student’s ability."
+     }
+    ]
+   },
+   {
+    "h": "Contact",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "To report an apparent content error, contact [SUPPORT EMAIL] or [SUPPORT WHATSAPP]."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "refund-cancellation-policy",
+  "title": "Refund & Cancellation Policy",
+  "meta": [
+   "Effective date: [DATE]",
+   "IMPORTANT: The supplied app notes establish a ₦4,000 one-time payment for nine months of premium access, but do not specify refund eligibility. This draft deliberately leaves the commercial decision for the operator to approve before publishing."
+  ],
+  "sections": [
+   {
+    "h": "1. What is purchased",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Theorem currently describes premium access as a one-time payment of ₦4,000 for nine months. Confirm that the amount and duration shown at checkout match this policy before launch."
+     }
+    ]
+   },
+   {
+    "h": "2. Payment confirmation",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Payments are initiated through Paystack. Premium access is granted only after the server receives and verifies the payment confirmation. If you believe you paid successfully but premium access has not been activated, contact [SUPPORT EMAIL] with your account email, transaction reference, payment date and amount. Do not send your password or full card details."
+     }
+    ]
+   },
+   {
+    "h": "3. Refund eligibility — complete before publication",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "[OPERATOR MUST CHOOSE AND INSERT THE ACTUAL REFUND RULE. Specify whether refunds are available for duplicate payments, failed transactions that were debited, accidental purchases, service unavailability, or other cases; any request deadline; any exclusions; and how decisions are communicated. Do not publish a promise that the business is not prepared or legally able to honour.]"
+     }
+    ]
+   },
+   {
+    "h": "4. How to request a refund",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Email [REFUND EMAIL] with the account email, Paystack reference, payment date, amount and a short explanation. We may request reasonable information to verify the transaction. Never send your password or full payment-card details."
+     }
+    ]
+   },
+   {
+    "h": "5. Processing and payment provider",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Approved refunds will be handled through the applicable payment process. The time for funds to appear may depend on the payment provider and the customer’s bank. Insert the operator’s approved processing target here: [REFUND PROCESSING TARGET]."
+     }
+    ]
+   },
+   {
+    "h": "6. Cancellation and expiry",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The current product is described as a one-time purchase, not an automatically renewing subscription. Premium access is intended to last nine months from the confirmed grant date. If the product changes to recurring billing, this policy must be updated to explain renewal and cancellation before that product is offered."
+     }
+    ]
+   },
+   {
+    "h": "7. Legal rights and contact",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "This policy does not remove rights that cannot legally be excluded. Contact [REFUND EMAIL] or [SUPPORT WHATSAPP] with questions."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "account-deletion-personal-data-requests",
+  "title": "Account Deletion & Personal Data Requests",
+  "meta": [
+   "Effective date: [DATE]"
+  ],
+  "sections": [
+   {
+    "h": "1. Delete your account",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "You can request deletion using the “Delete my account” feature in the Theorem app, where available. The request requires a working connection to the app’s services and may require you to be signed in. If you cannot use the in-app feature, contact [PRIVACY EMAIL] from the email address associated with your account and ask for account deletion."
+     }
+    ]
+   },
+   {
+    "h": "2. What the app’s deletion flow is designed to do",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The current implementation notes describe a flow that deletes exam history and push tokens through the CMS, deletes the Supabase user, and relies on cascading deletion for related profile and bookmark records. Confirm this behaviour in the production system before publishing this statement."
+     }
+    ]
+   },
+   {
+    "h": "3. Information that may remain",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Some information may need to be retained where required by law or reasonably necessary for security, fraud prevention, accounting, payment disputes or the establishment or defence of legal claims. [OPERATOR: identify the actual records retained, the legal/operational reason and the retention period before publication.] Deleting an account may not reverse a completed payment or automatically create a refund; refer to the Refund & Cancellation Policy."
+     }
+    ]
+   },
+   {
+    "h": "4. What happens to premium access",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Account deletion may remove access to the account and associated premium features. If you have an unresolved payment issue, contact [SUPPORT EMAIL] before requesting deletion so the team can identify the transaction. Do not delay a deletion request if you want your account deleted; the operator must handle any payment-record retention separately and lawfully."
+     }
+    ]
+   },
+   {
+    "h": "5. Other privacy requests",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "For questions about access, correction or other applicable personal-data rights, contact [PRIVACY EMAIL]. We may ask for information reasonably needed to verify the request and protect your account."
+     }
+    ]
+   },
+   {
+    "h": "6. Contact",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Privacy email: [PRIVACY EMAIL] Support email: [SUPPORT EMAIL] Operator: [LEGAL OWNER / ORGANISATION NAME]"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "acceptable-use-policy",
+  "title": "Acceptable Use Policy",
+  "meta": [],
+  "sections": [
+   {
+    "h": "1. Use the app lawfully",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Use Theorem only for lawful educational purposes and in a way that does not interfere with other students or the service."
+     }
+    ]
+   },
+   {
+    "h": "2. Prohibited conduct",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "You must not: share or sell account access where prohibited; attempt to access another student’s account or data; bypass premium locks or payment verification; manipulate exam results or analytics; scrape, mass-download, redistribute or commercially resell protected study content without permission; reverse-engineer or attack the service; upload malicious material; impersonate another person; or use the app to cheat in a live examination."
+     }
+    ]
+   },
+   {
+    "h": "3. Protect your account",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Keep your password and verification links private. Sign out on shared devices. Notify [SUPPORT EMAIL] if you suspect unauthorised access."
+     }
+    ]
+   },
+   {
+    "h": "4. Reporting misuse",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Report suspected abuse, security issues or unauthorised content sharing to [SUPPORT EMAIL]. Please include enough detail for us to investigate, but do not send passwords or other secret credentials."
+     }
+    ]
+   },
+   {
+    "h": "5. Enforcement",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "We may investigate suspected violations and restrict or suspend accounts where reasonably necessary to protect users, content or the service, subject to applicable law."
+     }
+    ]
+   },
+   {
+    "h": "6. Updates",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "We may update this policy as the app changes. The current version will be available at [ACCEPTABLE USE URL]."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "support-contact-page-copy",
+  "title": "Support & Contact Page Copy",
+  "meta": [
+   "Need help with Theorem JUPEB / CBT App? Contact our support team using the details below."
+  ],
+  "sections": [
+   {
+    "h": "Account and sign-in",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "For sign-in, password reset, account access or account-deletion questions, contact [SUPPORT EMAIL]. Never send us your password."
+     }
+    ]
+   },
+   {
+    "h": "Payment or premium access",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "If a payment has been completed but premium access has not appeared, send [SUPPORT EMAIL] your account email, Paystack transaction reference, payment date and amount. Do not send full card details."
+     }
+    ]
+   },
+   {
+    "h": "Study content or question errors",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "To report an error in a note, past question, practice question, explanation or model answer, tell us the subject, section, year (if relevant) and question details."
+     }
+    ]
+   },
+   {
+    "h": "Technical issues",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Include your app version, device model, operating-system version, a description of what happened and any error message. Do not include passwords or sensitive personal information."
+     }
+    ]
+   },
+   {
+    "h": "Contact details",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Email: [SUPPORT EMAIL] WhatsApp: [SUPPORT WHATSAPP — optional] Support hours / expected response time: [INSERT ONLY IF CONFIRMED] Operator: [LEGAL OWNER / ORGANISATION NAME]"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "cookie-policy",
+  "title": "Cookie Policy",
+  "meta": [
+   "Effective date: [DATE]",
+   "Use this page if the landing page uses cookies or similar technologies. If it does not, do not claim that it does; assess any analytics, embedded content, login or tracking tools separately."
+  ],
+  "sections": [
+   {
+    "h": "1. What cookies are",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Cookies are small files stored by a browser. Similar technologies may store or read information on a device."
+     }
+    ]
+   },
+   {
+    "h": "2. How this website uses them",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "[OPERATOR: list the actual cookies and similar technologies used by the landing page, including essential session/security cookies, analytics, advertising, embedded media or preference storage. Name the provider, purpose and retention period where known.]"
+     }
+    ]
+   },
+   {
+    "h": "3. Choices",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "You can manage cookies through your browser settings. Where applicable law requires consent for non-essential cookies, provide an appropriate consent mechanism before setting them."
+     }
+    ]
+   },
+   {
+    "h": "4. Changes and contact",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "We may update this policy if our website technologies change. Contact [PRIVACY EMAIL] with questions."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "publishing-checklist",
+  "title": "Publishing checklist",
+  "meta": [
+   "☐ Confirm the legal operator name and contact details.",
+   "☐ Confirm production data flows and all providers/SDKs, including analytics, crash reporting, push notifications and hosting.",
+   "☐ Confirm intended age group and any age/guardian requirements.",
+   "☐ Confirm actual data retention, deletion behaviour and backups.",
+   "☐ Approve and complete the Refund & Cancellation Policy before taking live payments.",
+   "☐ Confirm whether the landing page uses cookies or tracking and configure consent if required.",
+   "☐ Publish each policy at a stable HTTPS URL and link it from the website footer.",
+   "☐ Configure the app’s Privacy and Terms links and support contact environment variables; the implementation notes say these rows remain hidden until URLs are set.",
+   "☐ Ensure account deletion works in production and that store listing requirements are met.",
+   "☐ Test sign-up, sign-in, password reset, sign-out, account deletion, payment confirmation, premium expiry/access, push opt-in/out and content access on a real device.",
+   "☐ Review with a qualified Nigerian lawyer/privacy professional before launch."
+  ],
+  "sections": []
+ }
+]

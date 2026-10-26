@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 import { X, Rocket, Bell, Smartphone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
