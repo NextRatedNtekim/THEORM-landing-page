@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "JUPEB past questions and CBT practice for Android",
   description:
     "Theorem is the offline-capable JUPEB study app: practice real past questions by subject and year, sit full CBT-style mock exams, and track your progress -- all on Android, all in one place.",
-  url: "https://theorem.app", // TODO: replace with the production domain before launch
+  url: "https://theoremacademia.com", // TODO: replace with the production domain before launch
   ogImage: "/og-image.svg",
   keywords: [
     "JUPEB app",
