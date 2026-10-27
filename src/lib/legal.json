@@ -101,7 +101,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "You can sign out through the app. You may request account deletion through the app’s account-deletion feature, subject to successful connectivity and verification. You may also contact [PRIVACY EMAIL] to ask about your personal information or applicable privacy rights. We may need to verify your identity before acting on a request. The app’s account-deletion flow is designed to remove exam history and push tokens, delete the Supabase user, and cascade to related profile/bookmark records; confirm the live implementation and any retained records before publication."
+      "x": "You can sign out through the app. You may request account deletion through the app’s account-deletion feature, subject to successful connectivity and verification. You may also contact theoremacademia@gmail.com to ask about your personal information or applicable privacy rights. We may need to verify your identity before acting on a request. The app’s account-deletion flow is designed to remove exam history and push tokens, delete the Supabase user, and cascade to related profile/bookmark records; confirm the live implementation and any retained records before publication."
      }
     ]
    },
@@ -137,7 +137,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Privacy questions and requests: [PRIVACY EMAIL] App support: [SUPPORT EMAIL] Support WhatsApp (if offered): [SUPPORT WHATSAPP] Operator/legal name: [LEGAL OWNER / ORGANISATION NAME] Business/contact address: [BUSINESS ADDRESS, IF APPLICABLE]"
+      "x": "Privacy questions and requests: theoremacademia@gmail.com App support: theoremacademia@gmail.com Support WhatsApp (if offered): [SUPPORT WHATSAPP] Operator/legal name: [LEGAL OWNER / ORGANISATION NAME] Business/contact address: [BUSINESS ADDRESS, IF APPLICABLE]"
      }
     ]
    }
@@ -382,7 +382,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Email [REFUND EMAIL] with the account email, Paystack reference, payment date, amount and a short explanation. We may request reasonable information to verify the transaction. Never send your password or full payment-card details."
+      "x": "Email theoremacademia@gmail.com with the account email, Paystack reference, payment date, amount and a short explanation. We may request reasonable information to verify the transaction. Never send your password or full payment-card details."
      }
     ]
    },
@@ -409,7 +409,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "This policy does not remove rights that cannot legally be excluded. Contact [REFUND EMAIL] or [SUPPORT WHATSAPP] with questions."
+      "x": "This policy does not remove rights that cannot legally be excluded. Contact theoremacademia@gmail.com or [SUPPORT WHATSAPP] with questions."
      }
     ]
    }
@@ -427,7 +427,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "You can request deletion using the “Delete my account” feature in the Theorem app, where available. The request requires a working connection to the app’s services and may require you to be signed in. If you cannot use the in-app feature, contact [PRIVACY EMAIL] from the email address associated with your account and ask for account deletion."
+      "x": "You can request deletion using the “Delete my account” feature in the Theorem app, where available. The request requires a working connection to the app’s services and may require you to be signed in. If you cannot use the in-app feature, contact theoremacademia@gmail.com from the email address associated with your account and ask for account deletion."
      }
     ]
    },
@@ -454,7 +454,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Account deletion may remove access to the account and associated premium features. If you have an unresolved payment issue, contact [SUPPORT EMAIL] before requesting deletion so the team can identify the transaction. Do not delay a deletion request if you want your account deleted; the operator must handle any payment-record retention separately and lawfully."
+      "x": "Account deletion may remove access to the account and associated premium features. If you have an unresolved payment issue, contact theoremacademia@gmail.com before requesting deletion so the team can identify the transaction. Do not delay a deletion request if you want your account deleted; the operator must handle any payment-record retention separately and lawfully."
      }
     ]
    },
@@ -463,7 +463,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "For questions about access, correction or other applicable personal-data rights, contact [PRIVACY EMAIL]. We may ask for information reasonably needed to verify the request and protect your account."
+      "x": "For questions about access, correction or other applicable personal-data rights, contact theoremacademia@gmail.com. We may ask for information reasonably needed to verify the request and protect your account."
      }
     ]
    },
@@ -472,7 +472,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Privacy email: [PRIVACY EMAIL] Support email: [SUPPORT EMAIL] Operator: [LEGAL OWNER / ORGANISATION NAME]"
+      "x": "Privacy email: theoremacademia@gmail.com Support email: theoremacademia@gmail.com Operator: [LEGAL OWNER / ORGANISATION NAME]"
      }
     ]
    }
@@ -506,7 +506,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Keep your password and verification links private. Sign out on shared devices. Notify [SUPPORT EMAIL] if you suspect unauthorised access."
+      "x": "Keep your password and verification links private. Sign out on shared devices. Notify theoremacademia@gmail.com if you suspect unauthorised access."
      }
     ]
    },
@@ -515,7 +515,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Report suspected abuse, security issues or unauthorised content sharing to [SUPPORT EMAIL]. Please include enough detail for us to investigate, but do not send passwords or other secret credentials."
+      "x": "Report suspected abuse, security issues or unauthorised content sharing to theoremacademia@gmail.com. Please include enough detail for us to investigate, but do not send passwords or other secret credentials."
      }
     ]
    },
@@ -551,7 +551,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "For sign-in, password reset, account access or account-deletion questions, contact [SUPPORT EMAIL]. Never send us your password."
+      "x": "For sign-in, password reset, account access or account-deletion questions, contact theoremacademia@gmail.com. Never send us your password."
      }
     ]
    },
@@ -560,7 +560,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "If a payment has been completed but premium access has not appeared, send [SUPPORT EMAIL] your account email, Paystack transaction reference, payment date and amount. Do not send full card details."
+      "x": "If a payment has been completed but premium access has not appeared, send theoremacademia@gmail.com your account email, Paystack transaction reference, payment date and amount. Do not send full card details."
      }
     ]
    },
@@ -587,7 +587,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Email: [SUPPORT EMAIL] WhatsApp: [SUPPORT WHATSAPP — optional] Support hours / expected response time: [INSERT ONLY IF CONFIRMED] Operator: [LEGAL OWNER / ORGANISATION NAME]"
+      "x": "Email: theoremacademia@gmail.com WhatsApp: [SUPPORT WHATSAPP — optional] Support hours / expected response time: [INSERT ONLY IF CONFIRMED] Operator: [LEGAL OWNER / ORGANISATION NAME]"
      }
     ]
    }
@@ -633,7 +633,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "We may update this policy if our website technologies change. Contact [PRIVACY EMAIL] with questions."
+      "x": "We may update this policy if our website technologies change. Contact theoremacademia@gmail.com with questions."
      }
     ]
    }

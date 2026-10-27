@@ -22,7 +22,7 @@ export const siteConfig = {
     period: "9 months",
     provider: "Paystack",
   },
-  email: "hello@theorem.app", // TODO: confirm support email
+  email: "theoremacademia@gmail.com", // TODO: confirm support email
   team: [
     // TODO: replace names/roles/links, and drop portraits into /public/team (e.g. "/team/founder-one.jpg")
     { name: "Abasiponke Dennis", role: "Founder & CEO", photo: "", x: "https://x.com/theoremjupeb", linkedin: "https://linkedin.com" },
