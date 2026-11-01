@@ -14,6 +14,7 @@ import { TrustLegal } from "@/components/TrustLegal";
 import { MobileCta } from "@/components/MobileCta";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { Footer } from "@/components/Footer";
+import { Community } from "@/components/Community"
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         <TrustLegal />
         <Team />
         <Faq />
+        <Community />
         <DownloadCta />
       </main>
       <Footer />
