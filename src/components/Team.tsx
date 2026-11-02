@@ -73,11 +73,24 @@ export function Team() {
                 )}
               </motion.div>
               <h3 className="mt-6 font-display text-3xl font-medium tracking-tight text-ink">{m.name}</h3>
-              <p className="mt-1 text-lg text-ink-soft">{m.role}</p>
-              <div className="mt-4 flex gap-4 text-primary-dark">
-                <a href={m.x} target="_blank" rel="noopener noreferrer" aria-label={`${m.name} on X`} className="focus-ring rounded-md transition-transform hover:-translate-y-0.5 hover:text-primary"><XIcon /></a>
-                <a href={m.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${m.name} on LinkedIn`} className="focus-ring rounded-md transition-transform hover:-translate-y-0.5 hover:text-primary"><InIcon /></a>
-              </div>
+<p className="mt-1 text-lg text-ink-soft">{m.role}</p>
+
+<div className="mt-4 flex gap-4 text-primary-dark">
+  {/* <a href={m.x} target="_blank" rel="noopener noreferrer" aria-label={`${m.name} on X`} className="focus-ring rounded-md transition-transform hover:-translate-y-0.5 hover:text-primary"><XIcon /></a> */}
+  {m.x && (
+    <a href={m.x} target="_blank" rel="noopener noreferrer" aria-label={`${m.name} on GitHub`} className="focus-ring rounded-md transition-transform hover:-translate-y-0.5 hover:text-primary"><XIcon /></a>
+  )}
+  {m.linkedin && (
+    <a href={m.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${m.name} on GitHub`} className="focus-ring rounded-md transition-transform hover:-translate-y-0.5 hover:text-primary"><InIcon /></a>
+  )}
+  {m.github && (
+    <a href={m.github} target="_blank" rel="noopener noreferrer" aria-label={`${m.name} on GitHub`} className="focus-ring rounded-md transition-transform hover:-translate-y-0.5 hover:text-primary"><GithubIcon /></a>
+  )}
+  {m.website && (
+    <a href={m.website} target="_blank" rel="noopener noreferrer" aria-label={`${m.name}'s website`} className="focus-ring rounded-md transition-transform hover:-translate-y-0.5 hover:text-primary"><LinkIcon /></a>
+  )}
+</div>
+              
             </motion.article>
           ))}
         </div>

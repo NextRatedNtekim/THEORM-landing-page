@@ -1,3 +1,32 @@
+export type TeamMember = {
+  name: string;
+  role: string;
+  photo: string;
+  x?: string;
+  linkedin?: string;
+  github?: string;
+  website?: string;
+};
+
+const team: readonly TeamMember[] = [
+  // TODO: replace names/roles/links, and drop portraits into /public/team (e.g. "/team/founder-one.jpg")
+  {
+    name: "Abasikponke Dennis",
+    role: "Founder & CEO",
+    photo: "",
+    x: "https://x.com/theoremjupeb",
+    linkedin: "#",
+  },
+  {
+    name: "Samuel Ntekim",
+    role: "Software Engineer",
+    photo: "",
+    // x: "https://x.com/theoremjupeb",
+    // linkedin: "https://linkedin.com",
+    website: "https://lockscodes.xyz",
+    github: "https://github.com/NextRatedNtekim",
+  },
+];
 export const siteConfig = {
   name: "Theorem",
   tagline: "JUPEB past questions and CBT practice for Android",
@@ -32,11 +61,8 @@ export const siteConfig = {
     provider: "Paystack",
   },
   email: "theoremacademia@gmail.com", // TODO: confirm support email
-  team: [
-    // TODO: replace names/roles/links, and drop portraits into /public/team (e.g. "/team/founder-one.jpg")
-    { name: "Abasikponke Dennis", role: "Founder & CEO", photo: "", x: "https://x.com/theoremjupeb", linkedin: "https://linkedin.com" },
-    { name: "Samuel Ntekim", role: "Software Engineer", photo: "", x: "https://x.com/theoremjupeb", linkedin: "https://linkedin.com" },
-  ],
+   team,
+  
   social: {
     twitter: "https://x.com/theoremjupeb", // TODO: confirm handle
   },
