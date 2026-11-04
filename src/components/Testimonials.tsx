@@ -15,6 +15,35 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     quote:
+      "What I love about THEOREM is how it brings different learning resources together in one place. As a JUPEB student, finding the right materials and past questions wasn't always easy. Sometimes, you have to visit several or use different AI platforms before getting what you need. Having an app that makes these resources more accessible is definitely a great initiative. I believe it will make learning easier and save students a lot of time.",
+    name: "Favour Etim.",
+    role: "Medicine and Surgery, UNICAL",
+    initials: "FE",
+  },
+  {
+    quote:
+      "One thing I have realised about JUPEB is that preparation goes beyond just attending lectures. You need consistent practice, access to good study materials and exposure to different questions. THEOREM provides an opportunity to have these resources readily available. I particularly like the idea of practising questions and testing my understanding before examinations. It is definitely something that can improve how students prepare.",
+    name: "David Akpan",
+    role: "Medicine and Surgery, UNIUYO",
+    initials: "DA",
+  },
+  {
+    quote:
+      "THEOREM is na better idea, especially for guys wey dey prepare for JUPEB. Sometimes, e dey tire person because say you go dey go through different materials wey don scatter for your phone sef. E better pass all those other apps wey dey and e cheap sef. I think this one go help students become dey more consistent with their studies",
+    name: "Miracle James",
+    role: "Lakode Akintola University of Technology, MECHANICAL ENGINEERING ",
+    initials: "MA",
+  },
+  {
+    quote:
+      "I think THEOREM will expose students to a lot of information they might not ordinarily come across. Not every student knows where to find resources or how to prepare adequately for JUPEB examinations. With the right materials and enough practice, students can identify their weaknesses and work on them. I believe this initiative has the potential to make a meaningful difference.",
+ 
+    name: " Samuel David",
+    role: "RADIOGRAPHY, Delta State University.",
+    initials: "SD",
+  },
+  {
+    quote:
       "Practicing in actual CBT format took the fear out of exam day. I knew exactly what to expect before I sat down.",
     name: "Amaka O.",
     role: "JUPEB candidate, Biology track",
