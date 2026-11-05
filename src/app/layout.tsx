@@ -90,7 +90,7 @@ const jsonLd = {
   url: siteConfig.url,
   offers: {
     "@type": "Offer",
-    price: "4000",
+    price: "4500",
     priceCurrency: "NGN",
     category: "subscription",
     eligibleDuration: {
