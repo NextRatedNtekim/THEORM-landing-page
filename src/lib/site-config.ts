@@ -56,7 +56,7 @@ export const siteConfig = {
   launchDate: "2026-11-05",
   launchDateLabel: "15 November 2026",
   price: {
-    amount: "\u20a64,000",
+    amount: "\u20a64,500",
     period: "9 months",
     provider: "Paystack",
   },
