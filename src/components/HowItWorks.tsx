@@ -61,7 +61,7 @@ export function HowItWorks() {
             transition={{ duration: 0.6, ease }}
             className="max-w-xl"
           >
-            <h2 className="font-display text-3xl font-medium tracking-tight text-ink sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-[-0.025em] text-ink sm:text-4xl">
               From install to exam-ready, in four steps.
             </h2>
           </motion.div>
@@ -106,10 +106,10 @@ export function HowItWorks() {
                 </div>
 
                 {/* Phone panel: phone rises into a soft card and is cropped at the bottom edge */}
-                <div className="relative order-2 mt-6 h-[300px] overflow-hidden rounded-3xl border border-line bg-gradient-to-b from-primary-light/30 via-primary-light/10 to-surface sm:order-1 sm:mt-0 sm:h-[360px] lg:h-[380px]">
+                <div className="relative order-2 mt-6 h-[300px] overflow-hidden rounded-3xl bg-gradient-to-b from-primary-dark via-primary to-primary-light/70 sm:order-1 sm:mt-0 sm:h-[360px] lg:h-[380px]">
                   <div
                     aria-hidden="true"
-                    className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-primary-light/50 blur-3xl"
+                    className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/25 blur-3xl"
                   />
                   <motion.div
                     initial={{ y: 70, opacity: 0 }}
@@ -122,7 +122,7 @@ export function HowItWorks() {
                       src={step.src}
                       alt={step.alt}
                       sizes="200px"
-                      className="h-auto w-full drop-shadow-[0_24px_30px_rgba(26,33,19,0.28)]"
+                      className="h-auto w-full drop-shadow-[0_24px_30px_rgba(10,18,4,0.5)]"
                     />
                   </motion.div>
                 </div>

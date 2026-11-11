@@ -15,6 +15,12 @@
   --color-primary-light: #accf4d;
   --color-primary-dark: #3f5a19;
 
+  /* Deeper + softer shades of the same brand greens, used for hero depth and gradients */
+  --color-forest: #152008;
+  --color-forest-mid: #24360f;
+  --color-mint: #e3eec6;
+  --color-mint-soft: #f0f5e2;
+
   /* Accent: warm result-slip amber, used sparingly for pricing / achievement moments */
   --color-accent: #c98a2b;
 
@@ -33,6 +39,10 @@
   --color-primary: var(--color-primary);
   --color-primary-light: var(--color-primary-light);
   --color-primary-dark: var(--color-primary-dark);
+  --color-forest: var(--color-forest);
+  --color-forest-mid: var(--color-forest-mid);
+  --color-mint: var(--color-mint);
+  --color-mint-soft: var(--color-mint-soft);
   --color-accent: var(--color-accent);
   --color-surface: var(--color-surface);
   --color-line: var(--color-line);
@@ -104,4 +114,46 @@ body {
     animation: none !important;
     overflow-x: auto;
   }
+}
+
+
+/* ---------- Hero (Vaynex-style depth: deep forest -> brand lime glow -> paper) ---------- */
+.hero-bg {
+  background:
+    radial-gradient(90% 55% at 50% 100%, color-mix(in srgb, var(--color-primary-light) 55%, transparent) 0%, transparent 70%),
+    linear-gradient(
+      180deg,
+      var(--color-forest) 0%,
+      var(--color-forest-mid) 30%,
+      var(--color-primary-dark) 62%,
+      color-mix(in srgb, var(--color-primary) 70%, var(--color-primary-light)) 86%,
+      var(--color-mint) 100%
+    );
+}
+
+/* Answer-sheet ruling, kept from the original hero but tuned for the dark ground */
+.ruled-bg-dark {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgb(255 255 255 / 0.045) 0px,
+    rgb(255 255 255 / 0.045) 1px,
+    transparent 1px,
+    transparent 40px
+  );
+  mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 90%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 90%);
+}
+
+/* Light glass card that floats on the dark hero */
+.glass-card {
+  background: color-mix(in srgb, white 82%, transparent);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  border: 1px solid color-mix(in srgb, white 70%, transparent);
+  box-shadow: 0 30px 60px -28px rgb(10 18 4 / 0.55);
+}
+
+/* Dark brand panel used for the highlighted stat + spotlight */
+.panel-forest {
+  background: linear-gradient(155deg, var(--color-forest-mid) 0%, var(--color-primary-dark) 60%, var(--color-primary) 100%);
 }

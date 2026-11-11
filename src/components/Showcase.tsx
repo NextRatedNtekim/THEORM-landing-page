@@ -54,7 +54,7 @@ export function Showcase() {
     <section id="showcase" className="overflow-hidden py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-xl">
-          <h2 className="font-display text-3xl font-medium tracking-tight text-ink sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-[-0.025em] text-ink sm:text-4xl">
             A closer look inside the app.
           </h2>
           <p className="mt-4 text-ink-soft">

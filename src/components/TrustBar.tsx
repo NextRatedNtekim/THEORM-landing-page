@@ -15,32 +15,38 @@ const points: Point[] = [
   { icon: ShieldCheck, label: "Secure checkout via Paystack" },
 ];
 
-const row = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.08 } },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 10 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] as const } },
-};
+function Row({ hidden = false }: { hidden?: boolean }) {
+  return (
+    <ul className="flex shrink-0 items-center gap-14 pr-14" aria-hidden={hidden || undefined}>
+      {[...points, ...points].map(({ icon: Icon, label }, i) => (
+        <li key={`${label}-${i}`} className="flex shrink-0 items-center gap-2.5 text-[0.95rem] font-medium text-ink-soft">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-mint text-primary-dark">
+            <Icon className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+          </span>
+          <span>{label}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export function TrustBar() {
   return (
-    <section aria-label="Why students trust Theorem" className="border-y border-line bg-surface/60">
+    <section aria-label="Why students trust Theorem" className="overflow-hidden py-10">
       <motion.div
-        variants={row}
-        initial="hidden"
-        whileInView="show"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: "-60px" }}
-        className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-10 gap-y-4 px-4 py-6 sm:px-6"
+        transition={{ duration: 0.8 }}
+        className="group [mask-image:linear-gradient(to_right,transparent,#000_10%,#000_90%,transparent)]"
       >
-        {points.map(({ icon: Icon, label }) => (
-          <motion.div key={label} variants={item} className="flex items-center gap-2 text-sm text-ink-soft">
-            <Icon className="h-4 w-4 text-primary" strokeWidth={1.75} aria-hidden="true" />
-            <span>{label}</span>
-          </motion.div>
-        ))}
+        <div
+          className="marquee-track flex w-max group-hover:[animation-play-state:paused]"
+          style={{ animationDuration: "45s" }}
+        >
+          <Row />
+          <Row hidden />
+        </div>
       </motion.div>
     </section>
   );

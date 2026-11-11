@@ -15,6 +15,8 @@ import { MobileCta } from "@/components/MobileCta";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { Footer } from "@/components/Footer";
 import { Community } from "@/components/Community"
+import { Statement } from "@/components/Statement";
+import { Spotlight } from "@/components/Spotlight";
 
 export default function Home() {
   return (
@@ -25,7 +27,9 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <Stats />
+        <Statement />
         <Features />
+        <Spotlight />
         <HowItWorks />
         <Showcase />
         <Testimonials />

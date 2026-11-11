@@ -70,7 +70,7 @@ export function Features() {
   return (
     <section id="features" className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
       <div className="max-w-xl">
-        <h2 className="font-display text-3xl font-medium tracking-tight text-ink sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-[-0.025em] text-ink sm:text-4xl">
           Everything you need between now and results day.
         </h2>
         <p className="mt-4 text-lg leading-relaxed text-ink-soft">
@@ -80,7 +80,7 @@ export function Features() {
       </div>
 
       <motion.div
-        className="mt-14 grid gap-8 overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3 bg-white"
+        className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
         variants={grid}
         initial="hidden"
         whileInView="show"
@@ -90,11 +90,13 @@ export function Features() {
           <motion.div
             key={title}
             variants={cell}
-            whileHover={{ backgroundColor: "var(--color-paper)" }}
-            className="flex flex-col gap-4 bg-surface p-8 b-5"
+            whileHover={{ y: -6 }}
+            className="flex flex-col gap-4 rounded-[1.75rem] border border-line bg-surface p-8 shadow-[0_24px_44px_-34px_rgba(63,90,25,0.5)] transition-shadow duration-300 hover:shadow-[0_34px_54px_-30px_rgba(63,90,25,0.6)]"
           >
-            <Icon className="h-6 w-6 text-primary" strokeWidth={1.75} aria-hidden="true" />
-            <h3 className="font-display text-lg font-medium text-ink">{title}</h3>
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-mint to-primary-light/60 text-primary-dark">
+              <Icon className="h-6 w-6" strokeWidth={1.75} aria-hidden="true" />
+            </span>
+            <h3 className="text-lg font-semibold tracking-tight text-ink">{title}</h3>
             <p className="text-[0.95rem] leading-relaxed text-ink-soft">{description}</p>
           </motion.div>
         ))}
