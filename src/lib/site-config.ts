@@ -13,14 +13,14 @@ const team: readonly TeamMember[] = [
   {
     name: "Abasikponke Dennis",
     role: "Founder & CEO",
-    photo: "",
-    x: "https://x.com/theoremjupeb",
+    photo: "/team/abasikponke-dennis.jpeg",
+    x: "#",
     linkedin: "#",
   },
   {
     name: "Samuel Ntekim",
     role: "Software Engineer",
-    photo: "",
+    photo: "/team/samuel-ntekim.png",
     // x: "https://x.com/theoremjupeb",
     // linkedin: "https://linkedin.com",
     website: "https://lockscodes.xyz",

@@ -5,6 +5,8 @@ import { CalendarClock } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 import { DownloadButton } from "./DownloadButton";
+import Image from "next/image";
+import Googlebatch from "@/asserts/googlebatch.png"
 
 export function DownloadCta() {
   return (
@@ -44,11 +46,13 @@ export function DownloadCta() {
               Get Theorem for Android
             </DownloadButton>
             <div className="w-40 opacity-90">
-              <ImagePlaceholder
+              {/* <ImagePlaceholder
                 label="Get it on Google Play badge (official Play Store asset)"
                 tone="inverted"
                 className="h-12 w-full"
-              />
+              /> */}
+              <Image src={Googlebatch} alt="Google Batch" />
+              
             </div>
           </div>
         </div>

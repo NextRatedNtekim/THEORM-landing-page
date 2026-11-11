@@ -3,6 +3,8 @@ import { legalDocs } from "@/lib/legal";
 import { siteConfig } from "@/lib/site-config";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 import { DownloadButton } from "./DownloadButton";
+import Googlebatch from "@/asserts/googlebatch.png"
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -14,10 +16,11 @@ export function Footer() {
             <p className="mt-3 text-sm leading-relaxed text-ink-soft">{siteConfig.description}</p>
 
             <DownloadButton className="focus-ring mt-6 inline-block rounded-lg">
-              <ImagePlaceholder
+              {/* <ImagePlaceholder
                 label="Get it on Google Play badge (official Play Store asset)"
                 className="h-14 w-48 justify-center"
-              />
+              /> */}
+              <Image src={Googlebatch} alt="Google Batch" className="h-14 w-48 justify-center"/>
             </DownloadButton>
           </div>
 
