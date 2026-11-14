@@ -99,7 +99,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "The app retrieves subjects, topics, notes and questions from our content service. Some content is restricted to premium users. Premium access is currently a one-time payment of ₦4,000 for nine months. Our server checks the payment confirmation from Paystack before granting access. Content files and images may be delivered through temporary signed links that expire after a short time."
+      "x": "The app retrieves subjects, topics, notes and questions from our content service. Some content is restricted to premium users. Premium access is currently a one-time payment of ₦4,500 for nine months. Our server checks the payment confirmation from Paystack before granting access. Content files and images may be delivered through temporary signed links that expire after a short time."
      },
      {
       "t": "p",
@@ -339,7 +339,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Some sections are free and others require premium access. Premium access is currently offered for a one-time payment of ₦4,000 for nine months, counted from the date access is activated, subject to the price and terms displayed at checkout. It is not an automatically renewing subscription. When the nine months end, premium content is locked again and free content remains available."
+      "x": "Some sections are free and others require premium access. Premium access is currently offered for a one-time payment of ₦4,500 for nine months, counted from the date access is activated, subject to the price and terms displayed at checkout. It is not an automatically renewing subscription. When the nine months end, premium content is locked again and free content remains available."
      },
      {
       "t": "p",
@@ -519,7 +519,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Theorem currently sells premium access as a one-time payment of ₦4,000 for nine months. The amount and duration shown at checkout apply to your purchase."
+      "x": "Theorem currently sells premium access as a one-time payment of ₦4,500 for nine months. The amount and duration shown at checkout apply to your purchase."
      }
     ]
    },
