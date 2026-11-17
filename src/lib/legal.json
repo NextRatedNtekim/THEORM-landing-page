@@ -47,10 +47,11 @@
        "Account data: your email address, the name and avatar you choose for your profile, and sign-in session information.",
        "Study setup data: your selected track, university and subject combination, and any request to change a confirmed combination.",
        "Learning and assessment data: practice and exam attempts, answers submitted, scores, exam history, time taken, accuracy, and analytics derived from this activity.",
-       "Bookmarks and preferences: items you bookmark and your app settings, including theme.",
-       "Payment data: your Paystack transaction reference, payment status, amount and the date premium access was granted. We do not receive or store your card number, expiry date or CVV. These are entered on Paystack’s checkout and handled by Paystack.",
+       "Bookmarks and preferences: items you bookmark and your app settings, including theme and notification preferences.",
+       "Offline data: content you download for offline use, the version and download status of that content, your premium access status and expiry as stored on your device, and answers or results from offline sessions that are waiting to be uploaded.",
+       "Payment data: your Paystack transaction reference, payment status, amount, the date premium access was granted and the date it expires. We do not receive or store your card number, expiry date or CVV. These are entered on Paystack’s checkout and handled by Paystack.",
        "Device and technical data: device model, operating system and version, app version, language, push-notification token, crash reports, error logs and the usage events described in section 7.",
-       "Support data: the messages and details you send us when you contact support."
+       "Support data: the messages and details you send us when you contact support. If you contact us on WhatsApp, we will also see your WhatsApp phone number and profile name."
       ]
      },
      {
@@ -74,11 +75,11 @@
       "t": "ul",
       "x": [
        "Creating and securing your account, signing you in and keeping sessions safe. Data: account and device data. Lawful basis: contract.",
-       "Delivering notes, past questions and practice questions, and saving subject combinations, bookmarks and exam history. Data: account, study setup and learning data. Lawful basis: contract.",
+       "Delivering notes, past questions and practice questions, including for offline use, and saving subject combinations, bookmarks and exam history. Data: account, study setup, learning and offline data. Lawful basis: contract.",
        "Grading exams and showing analytics and personalised recommendations such as weak topics. Data: learning data. Lawful basis: contract, and our legitimate interest in giving useful study guidance.",
-       "Processing premium purchases, confirming access and resolving payment issues. Data: payment data. Lawful basis: contract, and legal obligation (accounting records).",
+       "Processing premium purchases, confirming access and its expiry, and resolving payment issues. Data: payment data. Lawful basis: contract, and legal obligation (accounting records).",
        "Responding to support requests. Data: support data and related account data. Lawful basis: contract and legitimate interest.",
-       "Sending account, security and payment notices and service push notifications. Data: account data and push token. Lawful basis: contract and legitimate interest.",
+       "Sending account, security and payment notices and service push notifications, including notices sent to all users or only to free or premium users. Data: account data, premium status and push token. Lawful basis: contract and legitimate interest.",
        "Sending promotional notifications and messages about new content, features and offers. Data: push token and email. Lawful basis: your consent, which you can withdraw at any time.",
        "Fixing bugs, monitoring stability and understanding how the app is used so we can improve it. Data: device, crash and usage data. Lawful basis: legitimate interest.",
        "Preventing fraud and abuse, preventing one account’s data from appearing to another user, and enforcing our Terms. Data: account, device and payment data. Lawful basis: legitimate interest and legal obligation."
@@ -99,11 +100,11 @@
     "blocks": [
      {
       "t": "p",
-      "x": "The app retrieves subjects, topics, notes and questions from our content service. Some content is restricted to premium users. Premium access is currently a one-time payment of ₦4,500 for nine months. Our server checks the payment confirmation from Paystack before granting access. Content files and images may be delivered through temporary signed links that expire after a short time."
+      "x": "The app retrieves subjects, topics, notes and questions from our content service. Content is organised by subject, section and topic, and some sections are restricted to premium users. Which sections are free or premium may change as content is added or reorganised. Premium access is currently a one-time payment of ₦4,500 for nine months. Our server checks the payment confirmation from Paystack before granting access. Content files and images may be delivered through temporary signed links that expire after a short time."
      },
      {
       "t": "p",
-      "x": "Theorem can work offline. To do this, the app stores study content and some of your data, such as bookmarks and unsent exam answers, on your device. This data stays on your device until it is synced with our servers, you clear the app’s storage, or you sign out or delete your account. Please protect your device with a screen lock."
+      "x": "Theorem can work offline. To do this, you can download content by section, and the app stores that content and some of your data, such as bookmarks and unsent exam answers and results, on your device. The app keeps a version stamp on downloaded content so it can update it when you are online. Downloaded premium content stays available only while your premium access is valid, and the app checks your access when it next connects. This data stays on your device until it is synced with our servers, you clear the app’s storage, or you sign out or delete your account. Please protect your device with a screen lock."
      }
     ]
    },
@@ -130,6 +131,10 @@
      },
      {
       "t": "p",
+      "x": "If you choose to contact us on WhatsApp, that conversation is handled by WhatsApp (Meta) under its own terms and privacy policy. You can email us instead if you prefer."
+     },
+     {
+      "t": "p",
       "x": "Theorem has no public profiles, leaderboards or community features. Other users cannot see your name, avatar, scores or exam history."
      }
     ]
@@ -139,11 +144,11 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Analytics and crash reports. We use Firebase and Sentry to understand which features are used and to find and fix errors. These tools may collect an app instance identifier, device and operating-system information, app version, and events such as screens viewed. We do not use them to build advertising profiles, and we do not use your study answers or email address as analytics events."
+      "x": "Analytics and crash reports. We use Firebase and Sentry to understand which features are used and to find and fix errors. These tools may collect an app instance identifier, device and operating-system information, app version, and events such as screens viewed. We do not use them to build advertising profiles, and we do not use your study answers or email address as analytics events. We do not use the Android advertising ID or similar advertising identifiers."
      },
      {
       "t": "p",
-      "x": "Push notifications. If you allow notifications, the app registers your device’s push token with us so we can send you notifications. Service notifications, such as account, payment and exam-related notices, are sent because they are part of the service. Promotional notifications are sent only if you have opted in. You can turn off notifications at any time in your device settings or in the app. Signing out removes the device’s push registration from your account."
+      "x": "Push notifications. If you allow notifications, the app registers your device’s push token with us so we can send you notifications. We may send a notification to all users, only to premium users or only to free users, depending on its content (for example, an offer meant only for free users), and we may schedule notifications to be sent later. We use your premium status only to decide who receives which notification. Service notifications, such as account, payment and exam-related notices, are sent because they are part of the service. Promotional notifications are sent only if you have opted in. You can turn off notifications at any time in your device settings or in the app. Signing out removes the device’s push registration from your account."
      }
     ]
    },
@@ -228,6 +233,10 @@
      {
       "t": "p",
       "x": "When you delete your account, we delete your exam history, push tokens, profile, bookmarks and sign-in account from our systems within 30 days, subject to the backup period in section 10. We keep payment records for the period stated in section 10. Deleting your account ends your premium access, does not cancel or refund a completed payment on its own, and cannot be undone. If you have a payment problem, contact us before you delete your account so we can find your transaction."
+     },
+     {
+      "t": "p",
+      "x": "Content and data stored on your device for offline use is cleared when you delete your account in the app. If you request deletion by email instead, we cannot remove data from your device, so please uninstall the app or clear its storage."
      }
     ]
    },
@@ -236,7 +245,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "We use reasonable technical and organisational measures to protect your data, including encrypted connections (HTTPS), access controls and server-side checks that link data to the right student, temporary signed links for protected content, and server-side verification of payments. The app clears cached account-specific content when you sign out and resets account-specific data when a different user signs in."
+      "x": "We use reasonable technical and organisational measures to protect your data, including encrypted connections (HTTPS), access controls and server-side checks that link data to the right student, temporary signed links for protected content, and server-side verification of payments. Our content-management dashboard is restricted to authorised staff with role-based access. The app clears cached account-specific content when you sign out and resets account-specific data when a different user signs in."
      },
      {
       "t": "p",
@@ -308,7 +317,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "The app is a study and exam-preparation tool. It provides notes, past questions, practice questions, exam simulations and performance analytics. We do not guarantee a particular JUPEB result, admission outcome, score, grade or university placement. Content and analytics are provided to support study and should not be treated as a guarantee of examination outcomes."
+      "x": "The app is a study and exam-preparation tool. It provides notes, past questions, practice questions, exam simulations and performance analytics. Past questions are used in Read Mode and in the JUPEB Exam Simulation, and practice questions are used in Practice CBT and the Library. We do not guarantee a particular JUPEB result, admission outcome, score, grade or university placement. Content and analytics are provided to support study and should not be treated as a guarantee of examination outcomes."
      }
     ]
    },
@@ -339,7 +348,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Some sections are free and others require premium access. Premium access is currently offered for a one-time payment of ₦4,500 for nine months, counted from the date access is activated, subject to the price and terms displayed at checkout. It is not an automatically renewing subscription. When the nine months end, premium content is locked again and free content remains available."
+      "x": "Some sections are free and others require premium access. Which sections are free or premium is set per section and may change as content is added or reorganised. Premium access is currently offered for a one-time payment of ₦4,500 for nine months, counted from the date access is activated, subject to the price and terms displayed at checkout. It is not an automatically renewing subscription. When the nine months end, premium content is locked again, including premium content you downloaded for offline use, and free content remains available."
      },
      {
       "t": "p",
@@ -361,7 +370,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Practice CBTs and exam simulations may be graded by the server. Exam questions, timing, scoring, result review and analytics depend on the content and configuration available at the time. We may correct errors in content or scoring where reasonably necessary. Do not use the app to cheat in a live examination or misrepresent app results as official examination results."
+      "x": "Practice CBTs and exam simulations may be graded by the server. Exam questions, timing, scoring, result review and analytics depend on the content and configuration available at the time. Theory questions are provided for reading, with model answers, and are not answered or graded in the app. Practice questions in the Library are untimed and let you reveal the correct answer and explanation. We may correct errors in content or scoring where reasonably necessary. Do not use the app to cheat in a live examination or misrepresent app results as official examination results."
      }
     ]
    },
@@ -371,6 +380,10 @@
      {
       "t": "p",
       "x": "The service may require an internet connection for sign-in, content retrieval, exam submission, payment confirmation, analytics and notifications. Temporary interruptions, maintenance, network failures or provider outages may occur. We may update, modify or discontinue features where reasonably necessary. We will make reasonable efforts to avoid losing submitted answers during supported retry flows, but you should not assume that every unsent response is recoverable after a device or network failure."
+     },
+     {
+      "t": "p",
+      "x": "Some content can be downloaded and used offline. Offline use still needs an internet connection from time to time so the app can update downloaded content, check your premium access and upload saved answers and results. Downloaded content may be out of date until the app syncs."
      }
     ]
    },
@@ -481,7 +494,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "We aim to provide useful educational material, but errors, omissions, outdated information or differences in interpretation may occur. Students should check important requirements and official examination or admissions information with the relevant authority."
+      "x": "We aim to provide useful educational material, but errors, omissions, outdated information or differences in interpretation may occur. Content downloaded for offline use may be out of date until the app syncs. Students should check important requirements and official examination or admissions information with the relevant authority."
      }
     ]
    },
@@ -545,7 +558,7 @@
        "Duplicate payment: you were charged more than once for the same premium period.",
        "Debited but not activated: your payment was successful and debited, but premium access was not activated and we could not fix it within 7 days of your report.",
        "Fault on our side: a technical fault in the service prevents you from using premium content and we cannot fix it within 7 days of your report.",
-       "Accidental purchase: you ask for a refund within 24 hours of paying and have not opened any premium content."
+       "Accidental purchase: you ask for a refund within 24 hours of paying and have not opened or downloaded any premium content."
       ]
      },
      {
@@ -559,7 +572,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Premium content is made available as soon as access is activated, so we do not refund for a change of mind once you have used premium content. We also do not refund for dissatisfaction with exam results, for unused time after your account is suspended or ended for breaking our Terms, for premium time that has expired, or because you deleted your account. This does not affect any rights you have under the law that cannot be excluded."
+      "x": "Premium content is made available as soon as access is activated, so we do not refund for a change of mind once you have used or downloaded premium content. We also do not refund for dissatisfaction with exam results, for unused time after your account is suspended or ended for breaking our Terms, for premium time that has expired, or because you deleted your account. This does not affect any rights you have under the law that cannot be excluded."
      }
     ]
    },
@@ -586,7 +599,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Premium is a one-time purchase, not an automatically renewing subscription, so there is nothing to cancel and you will not be charged again unless you buy again. Premium access lasts nine months from the date it was activated. If the product changes to recurring billing, we will update this policy to explain renewal and cancellation before it is offered."
+      "x": "Premium is a one-time purchase, not an automatically renewing subscription, so there is nothing to cancel and you will not be charged again unless you buy again. Premium access lasts nine months from the date it was activated, after which premium content, including any downloaded for offline use, is locked again. If the product changes to recurring billing, we will update this policy to explain renewal and cancellation before it is offered."
      }
     ]
    },
@@ -644,7 +657,7 @@
        "your sign-in account and email address;",
        "your profile, including your name and avatar;",
        "your subject combination and study setup;",
-       "your bookmarks and app preferences;",
+       "your bookmarks and app preferences, including notification preferences;",
        "your exam history, answers and analytics; and",
        "your push-notification tokens."
       ]
@@ -652,6 +665,10 @@
      {
       "t": "p",
       "x": "Deleted data is removed from our backups within 90 days."
+     },
+     {
+      "t": "p",
+      "x": "Content and data stored on your device for offline use is cleared when you delete your account in the app. If you request deletion by email, we cannot remove data from your device, so please uninstall the app or clear its storage."
      }
     ]
    },
@@ -722,7 +739,8 @@
       "x": [
        "share, sell or lend your account access;",
        "attempt to access another student’s account or data;",
-       "bypass premium locks or payment verification;",
+       "bypass premium locks, offline-access checks or payment verification;",
+       "tamper with downloaded content, locally stored data or the offline sync to extend premium access or change results;",
        "manipulate exam results or analytics;",
        "scrape, mass-download, redistribute or commercially resell protected study content without permission;",
        "reverse-engineer, attack or overload the service;",
@@ -810,7 +828,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Include your app version, device model, operating-system version, a description of what happened and any error message. Do not include passwords or sensitive personal information."
+      "x": "Include your app version, device model, operating-system version, a description of what happened and any error message. For problems with offline downloads, syncing or notifications, tell us which subject or section was affected. Do not include passwords or sensitive personal information."
      }
     ]
    },
@@ -893,7 +911,13 @@
    "☐ Confirm the refund rules in the Refund & Cancellation Policy are ones you will honour.",
    "☐ Check whether the NDPC registration requirement for data controllers of major importance applies to you.",
    "☐ Test sign-up, sign-in, password reset, sign-out, account deletion, payment confirmation, premium expiry, push opt-in and opt-out, and content access on a real device.",
-   "☐ Review everything with a qualified Nigerian lawyer or privacy professional before launch."
+   "☐ Review everything with a qualified Nigerian lawyer or privacy professional before launch.",
+   "☐ Confirm the price of ₦4,500 and the nine-month duration match the app and Paystack, since they appear in the Privacy Policy, Terms and Refund policy.",
+   "☐ Confirm Firebase and Sentry do not add the AD_ID permission (check the merged AndroidManifest.xml). Block it and disable ad ID collection if they do, so the policy and your Play Console “No” answer stay true.",
+   "☐ Confirm downloaded premium content locks again when premium expires, and that offline data is cleared on sign-out and on in-app account deletion.",
+   "☐ Confirm push notifications can target all, premium-only or free-only users, and that promotional notifications are never sent to users who have not opted in.",
+   "☐ Update the “Last updated” date on each changed policy, and make sure it is not later than the effective date or that the effective date is moved to match.",
+   "☐ In the Play Data Safety form, also cover offline data stored on the device and WhatsApp support contact details if you want them reflected, and keep it consistent with the Privacy Policy."
   ],
   "sections": []
  }
